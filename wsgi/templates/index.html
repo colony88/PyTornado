@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../scripts/include_header.js"></script>
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1>WinkelApp</h1>
+			<i>Waarmee kan ik u vandaag helpen?</i>
+			{% for key in links %}
+				<br>
+				<a href={{ links[key] }} class="btn btn-default"> {{ key }} </a>
+			{% end %}
+		</div>
+	</body>
+</html>
